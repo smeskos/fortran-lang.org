@@ -7,6 +7,7 @@
     <meta name="description" content="Fortran Programming Language">
     <title>Learn Fortran - Fortran Programming Language</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -15,6 +16,12 @@
     <link href="/assets/css/syntax.css" rel="stylesheet">
     <link rel="canonical" href="https://fortran-lang.org/learn/" />
     <script src="https://kit.fontawesome.com/8d17d4fe97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="/assets/github-activity-0.1.5/github-activity-0.1.5.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="/assets/github-activity-0.1.5/github-activity-0.1.5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -50,6 +57,13 @@
 		    <li>
 		    
 		    <a href="/compilers/">Compilers</a>
+		    
+			</li>
+		
+		    
+		    <li>
+		    
+		    <a href="/community/">Community</a>
 		    
 			</li>
 		
@@ -163,6 +177,24 @@
           <p> An introduction to the Fortran syntax and its capabilities </p>
         </div>
       
+        <div class="col-flex">
+          <h3>
+          <i class="fas fa-book"></i>
+          <a href="/learn/building_programs" >
+            Building programs
+          </a></h3>
+          <p> How to use the compiler to build an executable program </p>
+        </div>
+      
+        <div class="col-flex">
+          <h3>
+          <i class="fas fa-book"></i>
+          <a href="/learn/os_setup" >
+            Setting up your OS
+          </a></h3>
+          <p> How to setup a Fortran developement environment in Windows, Linux and macOS. </p>
+        </div>
+      
       </div>
 
     
@@ -185,6 +217,13 @@
           Fortran wiki
         </b></a>
         A rich collection of Fortran articles and resources in an editable wiki format
+      </li>
+      
+      <li> 
+        <a href="https://www.fortran90.org/" target="_blank"><b>
+          Fortran 90 org
+        </b></a>
+        Fortran Best Practices guide, Python/Fortran Rosetta Stone, Fortran FAQ
       </li>
       
       <li> 
@@ -222,6 +261,13 @@
         A github repository containing code samples for various Fortran 2018 features
       </li>
       
+      <li> 
+        <a href="https://stevelionel.com/drfortran" target="_blank"><b>
+          Doctor Fortran Blog
+        </b></a>
+        A collection of posts on interesting or little-understood aspects of the Fortran language
+      </li>
+      
 
     </ul>
 
@@ -241,7 +287,17 @@
       </li>
       
       <li>
-        <i>Chapman S. J.</i>. 2018. 
+        <i>Numrich, R. W.</i>. 2018. 
+        <a href="https://doi.org/10.1201/9780429437182" target="_blank"><b>
+          Parallel Programming with Co-arrays
+        </b></a>.
+        1st ed. 
+        New York. 
+        Chapman and Hall/CRC
+      </li>
+      
+      <li>
+        <i>Chapman, S. J.</i>. 2018. 
         <a href="https://www.mheducation.com/highered/product/fortran-scientists-engineers-chapman/M9780073385891.html" target="_blank"><b>
           Fortran for Scientists and Engineers
         </b></a>.
@@ -261,13 +317,53 @@
       </li>
       
       <li>
-        <i>Metcalf, M., Reid, J. and Cohen M.</i>. 2018. 
+        <i>Metcalf, M., Reid, J. and Cohen, M.</i>. 2018. 
         <a href="https://global.oup.com/academic/product/modern-fortran-explained-9780198811893" target="_blank"><b>
           Modern Fortran Explained
         </b></a>.
         5th ed. 
         Oxford, UK. 
         Oxford Universtiy Press
+      </li>
+      
+      <li>
+        <i>Chirila, D. B., and Lohmann, G.</i>. 2015. 
+        <a href="https://doi.org/10.1007/978-3-642-37009-0" target="_blank"><b>
+          Introduction to Modern Fortran for the Earth System Sciences
+        </b></a>.
+        1st ed. 
+        Berlin. 
+        Springer-Verlag
+      </li>
+      
+      <li>
+        <i>Brainerd, W. S.</i>. 2015. 
+        <a href="https://doi.org/10.1007/978-1-4471-6759-4" target="_blank"><b>
+          Guide to Fortran 2008 Programming
+        </b></a>.
+        1st ed. 
+        London. 
+        Springer-Verlag
+      </li>
+      
+      <li>
+        <i>Rouson, D., Xia, J., and Xiaofeng, X.</i>. 2014. 
+        <a href="https://www.cambridge.org/gb/academic/subjects/engineering/engineering-general-interest/scientific-software-design-object-oriented-way" target="_blank"><b>
+          Scientific Software Design: The Object-Oriented Way
+        </b></a>.
+        2nd ed. 
+        Cambridge. 
+        Cambridge University Press
+      </li>
+      
+      <li>
+        <i>Hanson, R. J. and Hopkins, T.</i>. 2013. 
+        <a href="https://doi.org/10.1137/1.9781611973129.fm" target="_blank"><b>
+          Numerical Computing with Modern Fortran
+        </b></a>.
+        1st ed. 
+        Philadelphia. 
+        SIAM
       </li>
       
       <li>
@@ -278,6 +374,56 @@
         1st ed. 
         Cambridge, UK. 
         Cambridge University Press
+      </li>
+      
+      <li>
+        <i>Clerman, N. S. and Spector, W.</i>. 2011. 
+        <a href="https://doi.org/10.1017/CBO9781139027687" target="_blank"><b>
+          Modern Fortran: Style and Usage
+        </b></a>.
+        1st ed. 
+        Cambridge. 
+        Cambridge University Press
+      </li>
+      
+      <li>
+        <i>McCormack, D.</i>. 2009. 
+        <a href="https://www.lulu.com/en/gb/shop/drew-mccormack/scientific-software-development-in-fortran/ebook/product-1gvmw8p6.html" target="_blank"><b>
+          Scientific Software Development with Fortran
+        </b></a>.
+        1st ed. 
+        . 
+        Lulu Press
+      </li>
+      
+      <li>
+        <i>Oliveira, S. and Steward, D.</i>. 2006. 
+        <a href="https://www.cambridge.org/gb/academic/subjects/computer-science/scientific-computing-scientific-software/writing-scientific-software-guide-good-style" target="_blank"><b>
+          Writing Scientific Software: A Guide to Good Style
+        </b></a>.
+        1st ed. 
+        Cambridge. 
+        Cambridge University Press
+      </li>
+      
+      <li>
+        <i>Akin, E.</i>. 2003. 
+        <a href="https://doi.org/10.1017/CBO9780511530111" target="_blank"><b>
+          Object-Oriented Programming via Fortran 90/95
+        </b></a>.
+        1st ed. 
+        Cambridge. 
+        Cambridge University Press
+      </li>
+      
+      <li>
+        <i>Kernighan, B. and Pike, R.</i>. 1999. 
+        <a href="https://www.oreilly.com/library/view/the-practice-of/9780133133448/" target="_blank"><b>
+          The Practice of Programming
+        </b></a>.
+        1st ed. 
+        Reading. 
+        Addison-Wesley Professional
       </li>
       
 
@@ -302,6 +448,11 @@
         &middot;
       
     
+      <a href="/community/">Community</a>
+      
+        &middot;
+      
+    
       <a href="/packages">Packages</a>
       
         &middot;
@@ -320,10 +471,15 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
      
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/assets/js/fortranlang.js"></script>
     <script src="/assets/js/page_nav.js"></script>
+    <script src="/assets/js/gh-contributors.js"></script>
+    <script src="/assets/js/package_search.js"></script>
+    <script src="/assets/js/package_tags.js"></script>
     <script>
       feather.replace()
     </script>
