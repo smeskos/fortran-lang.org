@@ -151,6 +151,8 @@
         
       
         
+      
+        
           
           
     
@@ -293,6 +295,8 @@
     
     
       <!-- Get page title from page metadata -->
+      
+        
       
         
       
@@ -543,6 +547,97 @@
         
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+          
+
+      
+        <li><a href="/learn/building_programs/project_make">
+          An introduction to make</a></li>
+      
+
+    
+    
+      <!-- Get page title from page metadata -->
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
           
           
 
@@ -587,7 +682,7 @@ choose from:</p>
 
 <p><strong>Option 1: Distribute the entire source code</strong></p>
 
-<p>By far the simplest - for you as a programmer - is this one: you leave it
+<p>By far the simplest — for you as a programmer — is this one: you leave it
 up to the user to build it on their own machine. Unfortunately, that
 means you will have to have a user-friendly build system in place and
 the user will have to have access to suitable compilers. For build systems:
@@ -655,16 +750,16 @@ in a dynamic library. This enables you to:</p>
   <li>Provide a basic build script with a command like:</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gfortran <span class="nt">-o</span> <span class="k">function</span>.dll <span class="k">function</span>.f90 <span class="nt">-shared</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gfortran <span class="nt">-o</span> functions.dll functions.f90 <span class="nt">-shared</span>
 </code></pre></div></div>
 
 <p>or:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifort <span class="nt">-exe</span>:function.dll <span class="k">function</span>.f90 <span class="nt">-dll</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifort <span class="nt">-exe</span>:functions.dll functions.f90 <span class="nt">-dll</span>
 </code></pre></div></div>
 
-<p>As said, you cannot control that the user has done the right thing - any
-DLL “function.dll” with a function <code class="highlighter-rouge">f</code> would be accepted, but not necessarily
+<p>As said, you cannot control that the user has done the right thing — any
+DLL “functions.dll” with a function <code class="highlighter-rouge">f</code> would be accepted, but not necessarily
 lead to a successful run.</p>
 
 <p>An alternative set-up would be to change the main program into a subroutine
@@ -716,7 +811,7 @@ functionality provided by your library.</p>
 
         
           
-            <a href="/learn/building_programs/build_tools" style="margin-right: auto;">
+            <a href="/learn/building_programs/project_make" style="margin-right: auto;">
           
             <h3><i class="fas fa-arrow-circle-left"></i>
               Back
@@ -766,7 +861,7 @@ functionality provided by your library.</p>
     </div>
 
     <div class="col-narrow">
-      This site's source is <a href="https://github.com/fortran-lang/fortran-lang.github.io/">hosted on GitHub</a>.
+      This site's source is <a href="https://github.com/fortran-lang/fortran-lang.org/">hosted on GitHub</a>.
     </div>
   </div>
 </footer>
